@@ -1,3 +1,3 @@
 // Script principal
-import "../components/productFeatured.js";
-import "../components/sellingProduct.js";
+import "/src/components/productFeatured.js";
+import "/src/components/sellingProduct.js";

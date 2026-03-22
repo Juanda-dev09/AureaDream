@@ -2,7 +2,7 @@
 
 const productos = [
   {
-    image: "./public/images/Productos/BiodermaProduct.webp",
+    image: "/public/images/Productos/BiodermaProduct.webp",
     title: "Agua micelar Sensibio",
     price: "32.00",
     sectionType: "rostro",
@@ -10,7 +10,7 @@ const productos = [
     link: "#",
   },
   {
-    image: "./public/images/Productos/SerumTonificador.webp",
+    image: "/public/images/Productos/SerumTonificador.webp",
     title: "Serum fortificador Vichy",
     price: "52.00",
     sectionType: "rostro",
@@ -18,7 +18,7 @@ const productos = [
     link: "#",
   },
   {
-    image: "./public/images/Productos/SerumHidratante.webp",
+    image: "/public/images/Productos/SerumHidratante.webp",
     title: "Sérum Harumi Centella",
     price: "82.00",
     sectionType: "rostro",
@@ -26,7 +26,7 @@ const productos = [
     link: "#",
   },
   {
-    image: "./public/images/Productos/GelHidratanteNeuotrogena.webp",
+    image: "/public/images/Productos/GelHidratanteNeuotrogena.webp",
     title: "Gel Hidratante Neutrogena",
     price: "92.00",
     sectionType: "rostro",

@@ -1,20 +1,20 @@
 // Lista de productos destacados
 const productos = [
   {
-    image: "public/images/doctor-rogers-face-wash-front.webp",
+    image: "/public/images/doctor-rogers-face-wash-front.webp",
     title: "The Essentials",
     description:
       "Productos básicos esenciales para el cuidado diario de la piel y para mantener una barrera cutánea saludable.",
     link: "#",
   },
   {
-    image: "public/images/antiedadFeatured.webp",
+    image: "/public/images/antiedadFeatured.webp",
     title: "Antienvejecimiento",
     description: "Fórmulas concentradas que combaten los signos del tiempo.",
     link: "#",
   },
   {
-    image: "public/images/40000279_hidraloe_crema_facial_h.webp",
+    image: "/public/images/40000279_hidraloe_crema_facial_h.webp",
     title: "Hidratación Intensa",
     description:
       "Sueros y cremas que nutren en profundidad y mantienen la piel radiante.",
