@@ -126,3 +126,72 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .content__allFeatured-aureaDream {
+    height: 100%;
+    padding: var(--space-6) var(--space-8);
+
+    .content__ProductFeatured {
+      .contain_columnProductFeatured {
+        .bx-contentImage-productFeatured {
+          height: 200px;
+        }
+
+        .bx-infoProductFeatured {
+          .infoProductFeatured {
+            .txt {
+              font-size: var(--font-size-xs);
+            }
+          }
+
+          .content-btnExplorerMore {
+            .explorer {
+              font-size: var(--font-size-sm);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .content__allFeatured-aureaDream {
+    padding: var(--space-8) var(--space-4);
+    .content-introductionFeatured-aureaDream {
+      flex-direction: column;
+      align-items: start;
+      gap: var(--space-4);
+
+      .bx-introduction {
+        .txt {
+          font-size: var(--font-size-base);
+        }
+      }
+    }
+
+    .content__ProductFeatured {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+
+      .contain_columnProductFeatured {
+        .bx-contentImage-productFeatured {
+          height: 330px;
+        }
+
+        .bx-infoProductFeatured {
+          .infoProductFeatured {
+            .titleProductFeatured {
+              font-size: var(--font-size-xl);
+            }
+
+            .txt {
+              font-size: var(--font-size-base);
+            }
+          }
+        }
+      }
+    }
+  }
+}

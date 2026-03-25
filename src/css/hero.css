@@ -1,5 +1,4 @@
 /*HEADER SECTION - HERO*/
-
 .contentHeader-sectionHero-aureaDream {
   position: fixed;
   display: flex;
@@ -21,52 +20,10 @@
       width: 50px;
       height: 50px;
     }
-
-    .navbarPage-aureaDream {
-      display: flex;
-      align-items: center;
-      gap: var(--space-8);
-
-      .itemsNavbar {
-        position: relative;
-        font-size: var(--font-size-lg);
-        color: var(--ColorBlack);
-        transition: var(--transition-slow);
-
-        &::before {
-          content: "";
-          position: absolute;
-          width: 0;
-          height: 3px;
-          background-color: var(--ColorBrowm);
-          left: 0;
-          bottom: -1.6rem;
-          transition: var(--transition-slow);
-          user-select: none;
-          pointer-events: none;
-        }
-
-        &:hover {
-          color: var(--ColorBrowm);
-
-          &::before {
-            width: 100%;
-          }
-        }
-      }
-
-      .activeNavbar {
-        color: var(--ColorBrowmBlack) !important;
-
-        &::before {
-          width: 100%;
-          background-color: var(--ColorBrowmBlack) !important ;
-        }
-      }
-    }
   }
 
   .bx-search-btnsPage-aureaDream {
+    position: relative;
     display: flex;
     align-items: center;
     gap: var(--space-8);
@@ -109,6 +66,13 @@
       }
     }
 
+    .navbarPage-aureaDreamMobile {
+      display: none;
+    }
+    .navbarPage-aureaDreamMobile.activeNavbarHeader {
+      display: flex !important;
+    }
+
     .bx-iconsHeader {
       display: flex;
       align-items: center;
@@ -124,6 +88,20 @@
           color: var(--ColorBrowmBlack);
         }
       }
+    }
+
+    .bx-x {
+      position: absolute;
+      font-size: 2rem;
+      top: 1rem;
+      right: 1rem;
+    }
+  }
+
+  .bx-iconMenuHamburguese {
+    cursor: pointer;
+    .bxf {
+      font-size: 2rem;
     }
   }
 }
@@ -272,5 +250,145 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+/*MEDIA FROM TABLET*/
+@media (max-width: 768px) {
+  .contentHeader-sectionHero-aureaDream {
+    padding: 0 var(--space-8);
+
+    .bx-logo-and-navbar {
+      gap: var(--space-8);
+      .bx-logoPage {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .bx-search-btnsPage-aureaDream {
+      position: absolute;
+      display: flex;
+      justify-content: start;
+      flex-direction: column-reverse;
+      right: 0;
+      top: 0;
+      width: fit-content;
+      height: 100vh;
+      padding: var(--space-20) var(--space-8);
+      border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+      background-color: var(--color-bg);
+      transform: translateX(100%);
+      transition: var(--transition-slow);
+
+      .bx-iconSearch-aureaDream {
+        #search {
+          &:focus {
+            width: 200px;
+          }
+        }
+      }
+
+      .bx-iconsHeader {
+        align-items: center;
+        .bxf {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .bx-search-btnsPage-aureaDream.activeSearchBox {
+      transform: translateX(0);
+    }
+  }
+
+  .content__allHeroPage-aureaDream {
+    .content-infoHeroPage-aureaDream {
+      width: 100%;
+      .bx-infoIntroduction-skinCare-aureaDream {
+        .titleHeroPage-aureaDream {
+          font-size: var(--font-size-6xl);
+        }
+
+        .txt {
+          font-size: var(--font-size-lg);
+          width: 40ch;
+        }
+      }
+    }
+
+    .contentImage-modelSkinCare-aureaDream {
+      width: 80%;
+      position: absolute;
+      right: -10rem;
+      z-index: -1;
+    }
+  }
+}
+
+/*MEDIA FROM MOBILE*/
+@media (max-width: 376px) {
+  .contentHeader-sectionHero-aureaDream {
+    padding: 0 var(--space-4);
+    .bx-logo-and-navbar {
+      .navbarPage-aureaDream {
+        display: none;
+      }
+    }
+
+    .bx-search-btnsPage-aureaDream {
+      gap: var(--space-8);
+
+      .navbarPage-aureaDreamMobile.activeNavbarHeader {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-16);
+        margin-bottom: var(--space-12);
+
+        .itemsNavbar {
+          &:hover {
+            color: var(--ColorBlack);
+          }
+
+          &::before {
+            content: "";
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .content__allHeroPage-aureaDream {
+    width: 100%;
+    padding: 0 var(--space-4);
+
+    .content-infoHeroPage-aureaDream {
+      align-items: center;
+
+      .bx-infoIntroduction-skinCare-aureaDream {
+        .titleHeroPage-aureaDream {
+          font-size: var(--font-size-5xl);
+          text-align: center;
+        }
+
+        .txt {
+          width: 100%;
+          text-align: center;
+          font-size: var(--font-size-base);
+        }
+      }
+
+      .bx-buttonsPages-aureaDream {
+        width: 100%;
+        .btnAureaDream {
+          width: 100%;
+        }
+      }
+    }
+
+    .contentImage-modelSkinCare-aureaDream {
+      display: none;
+    }
   }
 }

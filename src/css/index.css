@@ -218,7 +218,7 @@ body {
     }
   }
 
-  .bx-inputsJoinAureaCircle {
+  .contain-inputsJoinAureaCircle {
     display: flex;
     align-items: center;
     gap: var(--space-1);
@@ -260,5 +260,124 @@ body {
     font-size: var(--font-size-xs);
     letter-spacing: 0.3px;
     color: var(--ColorGray);
+  }
+}
+
+.bx-iconMenuHamburguese {
+  display: none !important;
+}
+
+.bx-x {
+  display: none !important;
+}
+
+.bx-iconMenuHamburguese.activeMenuBox {
+  .bx-x {
+    display: block;
+  }
+
+  .bx-menu {
+    display: none;
+  }
+}
+
+.navbarPage-aureaDream {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+
+  .itemsNavbar {
+    position: relative;
+    font-size: var(--font-size-lg);
+    color: var(--ColorBlack);
+    transition: var(--transition-slow);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 3px;
+      background-color: var(--ColorBrowm);
+      left: 0;
+      bottom: -1.6rem;
+      transition: var(--transition-slow);
+      user-select: none;
+      pointer-events: none;
+    }
+
+    &:hover {
+      color: var(--ColorBrowm);
+
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+
+  .activeNavbar {
+    color: var(--ColorBrowmBlack) !important;
+
+    &::before {
+      width: 100%;
+      background-color: var(--ColorBrowmBlack) !important ;
+    }
+  }
+}
+
+/*QUERY JOIN AUREA CIRCLE SECTION*/
+@media (max-width: 768px) {
+  .bx-x {
+    display: block !important;
+  }
+
+  .bx-iconMenuHamburguese {
+    display: block !important;
+  }
+
+  .content__allJoinAureaCircle {
+    padding: 0 var(--space-8);
+
+    .bx-introductionInfo-joinAureaCircle {
+      .txt {
+        font-size: var(--font-size-base);
+        width: 45ch;
+      }
+    }
+
+    .contain-inputsJoinAureaCircle {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .content__allJoinAureaCircle {
+    padding: var(--space-8) var(--space-4);
+
+    .bx-introductionInfo-joinAureaCircle {
+      width: 100%;
+
+      .txt {
+        width: 100%;
+      }
+    }
+
+    .contain-inputsJoinAureaCircle {
+      width: 100%;
+      flex-direction: column;
+      gap: var(--space-4);
+
+      #inputJoinAureaDream {
+        width: 100%;
+      }
+
+      .bx-btnJoinAureaDream {
+        width: 100%;
+      }
+    }
+
+    .txtSubscript {
+      text-align: center;
+    }
   }
 }
