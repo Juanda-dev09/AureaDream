@@ -137,3 +137,60 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .content__allMoreShopping {
+    padding: var(--space-8);
+    height: 100%;
+
+    .moreShopping {
+      .content__cardsProductsMoreShopping {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        .cardProduct_moreShopping {
+          .contentInfoProduct-shopping {
+            .contain-objet {
+              .typeApply,
+              .typeProduct {
+                font-size: 10px;
+              }
+            }
+
+            .bx-titleAndPrice {
+              .titleThreed {
+                font-size: var(--font-size-base);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content__allMoreShopping {
+    padding: var(--space-8) var(--space-4);
+
+    .moreShopping {
+      .bx-introductionMoreShopping {
+        .txt {
+          width: 100%;
+          font-size: var(--font-size-base);
+        }
+      }
+
+      .content__cardsProductsMoreShopping {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+
+        .cardProduct_moreShopping {
+          .bx-imageMoreShopping {
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+}

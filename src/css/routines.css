@@ -6,11 +6,17 @@
   grid-template-rows: repeat(3, 1.1fr) repeat(3, 0.9fr);
   gap: var(--space-8);
   padding: 5.8rem 4rem 1rem 4rem;
+  grid-template-areas:
+    "hero   hero   hero"
+    "hero   hero   hero"
+    "hero   hero   hero"
+    "sec2   sec3   sec4"
+    "sec2   sec3   sec4"
+    "sec2   sec3   sec4";
 
   .section1 {
     position: relative;
-    grid-column: span 3 / span 3;
-    grid-row: span 3 / span 3;
+    grid-area: hero;
 
     background: var(--gradient-1);
     border-radius: var(--radius-xl);
@@ -117,8 +123,6 @@
 
   .routine-card {
     position: relative;
-    grid-column: span 1 / span 1;
-    grid-row: span 3 / span 3;
     border-radius: var(--border-radius-14);
     padding: 2rem;
     display: flex;
@@ -176,6 +180,7 @@
       width: fit-content;
       height: fit-content;
       display: flex;
+
       justify-content: center;
       align-items: center;
       width: 120px;
@@ -209,10 +214,10 @@
   }
 
   .section2 {
-    grid-row-start: 4;
     background: url(/public/images/ModeloCustomersImage.jpg) center no-repeat;
     background-size: cover;
     border-radius: var(--radius-xl);
+    grid-area: sec2;
   }
 
   .section3 {
@@ -221,6 +226,7 @@
     background: url(/public/images/ProductoSkinCare.webp) center no-repeat;
     background-size: cover;
     border-radius: var(--radius-xl);
+    grid-area: sec3;
   }
 
   .section4 {
@@ -233,6 +239,7 @@
     justify-content: space-between;
     user-select: none;
     gap: var(--space-8);
+    grid-area: sec4;
 
     .bx-imgWomen {
       width: 100%;
@@ -312,6 +319,133 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content__allRoutines {
+    height: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: var(--space-8);
+
+    grid-template-areas:
+      "hero   hero"
+      "sec2   sec3"
+      "sec4   sec4";
+
+    .section1 {
+      min-height: 300px;
+      overflow: hidden;
+
+      .content_InfoRoutinesIntroduction {
+        .bx-infoRoutines {
+          .titlRoutines {
+            font-size: var(--font-size-5xl);
+          }
+          .txt {
+            width: 35ch;
+          }
+        }
+      }
+
+      .bx-imageModelRoutines {
+        position: absolute;
+        width: 50%;
+        right: -4rem;
+      }
+    }
+
+    .section2,
+    .section3 {
+      position: relative;
+      min-height: 300px;
+      pointer-events: none;
+      padding: 1rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 95px;
+        background-color: hsl(0, 0%, 13%, 50%);
+        border-radius: 0;
+        left: 0;
+        bottom: 0;
+        filter: blur(18px);
+      }
+
+      .bx-contentInfoPersonalizedRoutines {
+        transform: translate(0);
+
+        .titlePersonalizedRoutines {
+          font-size: var(--font-size-xl);
+        }
+
+        .txt {
+          font-size: var(--font-size-sm);
+          letter-spacing: 0.2px;
+          line-height: 1.25;
+        }
+      }
+
+      .bx-btn-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .content__allRoutines {
+    padding: var(--space-8) var(--space-4);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "sec2"
+      "sec3"
+      "sec4";
+
+    .section1 {
+      position: relative;
+
+      .content_InfoRoutinesIntroduction {
+        width: 100%;
+        justify-content: end;
+        padding: var(--space-4);
+        gap: var(--space-12);
+        z-index: 1;
+
+        .bx-infoRoutines {
+          .titlRoutines {
+            width: 100%;
+            font-size: var(--font-size-4xl);
+          }
+
+          .txt {
+            width: 25ch;
+            font-size: var(--font-size-base);
+          }
+        }
+      }
+
+      .bx-imageModelRoutines {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        right: -7rem;
+
+        .modelRoutines {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .content-infoCustomers {
+        display: none;
       }
     }
   }
