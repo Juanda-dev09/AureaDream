@@ -44,7 +44,7 @@
           background-repeat: no-repeat;
           aspect-ratio: 1;
           width: 100%;
-          height: 200px;
+          min-height: 200px;
           border-radius: var(--radius-lg);
           box-shadow: var(--shadow-lg);
           overflow: hidden;
@@ -145,12 +145,15 @@
 
     .moreShopping {
       .content__cardsProductsMoreShopping {
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
 
         .cardProduct_moreShopping {
+          width: 100%;
+
           .bx-imageMoreShopping {
-            height: 400px !important;
+            height: 300px;
             background-size: contain;
             background-color: white;
           }
