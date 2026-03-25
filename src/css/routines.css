@@ -327,10 +327,10 @@
 @media (max-width: 768px) {
   .content__allRoutines {
     height: 100%;
-    height: auto;
+    height: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    padding: var(--space-8);
+    padding: var(--space-6);
 
     grid-template-areas:
       "hero   hero"

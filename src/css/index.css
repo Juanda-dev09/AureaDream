@@ -335,7 +335,7 @@ body {
   }
 
   .content__allJoinAureaCircle {
-    padding: 0 var(--space-8);
+    padding: 0 var(--space-6);
 
     .bx-introductionInfo-joinAureaCircle {
       .txt {

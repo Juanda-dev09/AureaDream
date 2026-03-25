@@ -129,7 +129,7 @@
 
 @media (max-width: 768px) {
   .content_allFooterSection-aureaDream {
-    padding: var(--space-8);
+    padding: var(--space-6);
 
     .footer-content {
       .footer-top {
