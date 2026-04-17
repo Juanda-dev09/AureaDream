@@ -11,7 +11,7 @@ const productos = [
     image: "/public/images/antiedadFeatured.webp",
     title: "Antienvejecimiento",
     description: "Fórmulas concentradas que combaten los signos del tiempo.",
-    link: "#",
+    link: "src/pages/producto-detalle.html",
   },
   {
     image: "/public/images/40000279_hidraloe_crema_facial_h.webp",

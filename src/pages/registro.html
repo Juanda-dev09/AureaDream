@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear cuenta | Aurea Dream</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="page-registro-aureaDream">
+      <div class="login-main">
+        <div class="login-card">
+          <div class="login-intro">
+            <h1 class="login-title">Crea tu cuenta</h1>
+            <p class="login-subtitle">
+              Únete para guardar favoritos, ver tus pedidos y recibir
+              novedades pensadas para tu piel.
+            </p>
+          </div>
+
+          <form class="login-form" action="#" method="post">
+            <div class="login-field">
+              <label for="registro-nombre">Nombre</label>
+              <input
+                id="registro-nombre"
+                name="nombre"
+                type="text"
+                autocomplete="given-name"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
+
+            <div class="login-field">
+              <label for="registro-email">Correo electrónico</label>
+              <input
+                id="registro-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="tu@email.com"
+                required
+              />
+            </div>
+
+            <div class="login-field">
+              <label for="registro-password">Contraseña</label>
+              <input
+                id="registro-password"
+                name="password"
+                type="password"
+                autocomplete="new-password"
+                placeholder="Mínimo 8 caracteres"
+                minlength="8"
+                required
+              />
+            </div>
+
+            <div class="login-field">
+              <label for="registro-password-confirm">Confirmar contraseña</label>
+              <input
+                id="registro-password-confirm"
+                name="password_confirm"
+                type="password"
+                autocomplete="new-password"
+                placeholder="Repite tu contraseña"
+                minlength="8"
+                required
+              />
+            </div>
+
+            <div class="registro-terms-box">
+              <div class="registro-terms-row">
+                <input
+                  type="checkbox"
+                  id="registro-terms"
+                  name="terms"
+                  class="registro-terms-input"
+                  required
+                />
+                <label for="registro-terms" class="registro-terms-label">
+                  He leído y acepto los
+                  <a href="#" class="registro-inline-link"
+                    >términos y condiciones</a
+                  >
+                  y la
+                  <a href="#" class="registro-inline-link"
+                    >política de privacidad</a
+                  >.
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="login-submit">Crear cuenta</button>
+          </form>
+
+          <p class="login-footerNote">
+            ¿Ya tienes cuenta?
+            <a href="./login.html">Inicia sesión</a>
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="../../src/js/authFormRedirect.js" defer></script>
+  </body>
+</html>

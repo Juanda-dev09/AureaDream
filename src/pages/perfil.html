@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi cuenta | Aurea Dream</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("aureaDream_auth") !== "1") {
+            window.location.replace("./login.html");
+          }
+        } catch (e) {
+          window.location.replace("./login.html");
+        }
+      })();
+    </script>
+    <main class="page-perfil-aureaDream">
+      <header class="contentHeader-sectionHero-aureaDream header-innerPage">
+        <section class="bx-logo-and-navbar">
+          <a
+            href="../../index.html"
+            class="bx-logoPage bx-logo-link"
+            aria-label="Aurea Dream — Inicio"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 92.03 91.59"
+              fill="var(--ColorBrowm)"
+              width="50"
+              height="50"
+            >
+              <path
+                d="M49.03,48.36c-.94.94-2.36,2.18-3.18,2.27s-2.04-1.23-2.83-2.01c-12.74-12.7-16.07-8.97-12.77-19.19,3.49-10.79,7.45-21.04,16.1-29.43,8,9.01,12.1,19.12,15.73,29.78,3.21,9.43-.78,6.27-13.05,18.58Z"
+              />
+              <g>
+                <path
+                  d="M35.39,55.3c9.19,11.68,8.91,21.41,10.33,36.29-13.25-1.66-25.94-6.53-33.96-16.56-4.99-6.24-9.07-13.16-10.15-20.94l-1.61-11.6c8.04-3.06,29.08,4.78,35.39,12.8Z"
+                />
+                <path
+                  d="M56.41,89.48c-.98-9.15-2.01-17.38-4.63-26.64,6.5-10.23,16.89-19.49,29.48-20.78l10.75-1.11c.59,22.19-13.07,42.28-35.6,48.53Z"
+                />
+              </g>
+            </svg>
+          </a>
+
+          <nav class="navbarPage-aureaDream">
+            <a href="../../index.html" class="itemsNavbar">Inicio</a>
+            <a href="./catalogo.html" class="itemsNavbar">Catalogo</a>
+            <a href="./nosotros.html" class="itemsNavbar">Nosotros</a>
+            <a href="#" class="itemsNavbar">Ciencia</a>
+          </nav>
+        </section>
+
+        <section class="bx-search-btnsPage-aureaDream">
+          <div class="bx-iconSearch-aureaDream">
+            <input type="text" id="search" placeholder="Buscar" />
+            <div class="bx-iconSearch"><i class="bxs bx-search"></i></div>
+          </div>
+
+          <div class="bx-iconsHeader">
+            <i class="bxf bx-heart"></i>
+            <i class="bxf bx-shopping-bag"></i>
+            <a
+              href="./perfil.html"
+              class="header-icon-link"
+              aria-current="page"
+              aria-label="Mi cuenta"
+            >
+              <i class="bxf bx-user"></i>
+            </a>
+          </div>
+
+          <nav class="navbarPage-aureaDream navbarPage-aureaDreamMobile">
+            <a href="../../index.html" class="itemsNavbar">Inicio</a>
+            <a href="./catalogo.html" class="itemsNavbar">Catalogo</a>
+            <a href="./nosotros.html" class="itemsNavbar">Nosotros</a>
+            <a href="#" class="itemsNavbar">Ciencia</a>
+          </nav>
+
+          <i class="bxf bx-x"></i>
+        </section>
+
+        <div class="bx-iconMenuHamburguese">
+          <i class="bxf bx-menu"></i>
+        </div>
+      </header>
+
+      <div class="perfil-main">
+        <h1 class="perfil-pageTitle">Mi cuenta</h1>
+        <p class="perfil-pageLead">
+          Gestiona tus datos, revisa tus pedidos y personaliza cómo te
+          contactamos.
+        </p>
+
+        <section class="perfil-heroCard" aria-labelledby="perfil-nombre">
+          <div class="perfil-avatar" aria-hidden="true">AD</div>
+          <div class="perfil-heroText">
+            <h2 id="perfil-nombre">Invitada Aurea</h2>
+            <p class="perfil-email">hola@ejemplo.com</p>
+          </div>
+        </section>
+
+        <div class="perfil-grid">
+          <section class="perfil-card" aria-labelledby="perfil-datos">
+            <h3 id="perfil-datos">Datos personales</h3>
+            <div class="perfil-field">
+              <label for="perfil-nombre-input">Nombre</label>
+              <input
+                id="perfil-nombre-input"
+                type="text"
+                value="Invitada Aurea"
+                disabled
+              />
+            </div>
+            <div class="perfil-field">
+              <label for="perfil-email-input">Correo electrónico</label>
+              <input
+                id="perfil-email-input"
+                type="email"
+                value="hola@ejemplo.com"
+                disabled
+              />
+            </div>
+            <div class="perfil-field">
+              <label for="perfil-tel">Teléfono</label>
+              <input
+                id="perfil-tel"
+                type="tel"
+                value="+34 600 000 000"
+                disabled
+              />
+            </div>
+            <p class="perfil-hint">
+              Cuando conectes tu backend podrás editar y guardar estos datos
+              desde aquí.
+            </p>
+          </section>
+
+          <section class="perfil-card" aria-labelledby="perfil-pedidos">
+            <h3 id="perfil-pedidos">Pedidos recientes</h3>
+            <p class="perfil-empty">
+              Aún no tienes pedidos.
+              <br />
+              <a href="./catalogo.html">Explorar catálogo</a>
+            </p>
+          </section>
+
+          <section class="perfil-card perfil-card--wide">
+            <h3 id="perfil-pref">Preferencias</h3>
+            <label class="perfil-prefRow">
+              <input type="checkbox" checked disabled />
+              <span>
+                Quiero recibir novedades y consejos de skincare por correo
+                (demostración estática).
+              </span>
+            </label>
+          </section>
+        </div>
+
+        <div class="perfil-actions">
+          <a
+            href="./login.html"
+            class="perfil-btn perfil-btn--ghost"
+            id="perfil-change-account"
+            >Cambiar de cuenta</a
+          >
+          <a
+            href="../../index.html"
+            class="perfil-btn perfil-btn--primary"
+            id="perfil-logout"
+            >Cerrar sesión</a
+          >
+        </div>
+      </div>
+
+      <footer class="content_allFooterSection-aureaDream"></footer>
+    </main>
+
+    <script type="module" src="../../src/js/main.js"></script>
+    <script src="../../src/js/authSession.js" defer></script>
+  </body>
+</html>

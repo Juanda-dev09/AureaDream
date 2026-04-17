@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar sesión | Aurea Dream</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="page-login-aureaDream">
+      <div class="login-main">
+        <div class="login-card">
+          <div class="login-intro">
+            <h1 class="login-title">Bienvenida de nuevo</h1>
+            <p class="login-subtitle">
+              Accede a tu cuenta para ver pedidos, listas de deseos y
+              recomendaciones personalizadas.
+            </p>
+          </div>
+
+          <form class="login-form" action="#" method="post">
+            <div class="login-field">
+              <label for="login-email">Correo electrónico</label>
+              <input
+                id="login-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="tu@email.com"
+                required
+              />
+            </div>
+
+            <div class="login-field">
+              <label for="login-password">Contraseña</label>
+              <input
+                id="login-password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                placeholder="••••••••"
+                required
+              />
+            </div>
+
+            <div class="login-rowBetween">
+              <label class="login-remember">
+                <input type="checkbox" name="remember" />
+                Recordarme
+              </label>
+              <a href="#" class="login-forgot">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <button type="submit" class="login-submit">Entrar</button>
+          </form>
+
+          <p class="login-footerNote">
+            ¿Aún no tienes cuenta?
+            <a href="./registro.html">Regístrate</a>
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="../../src/js/authFormRedirect.js" defer></script>
+  </body>
+</html>

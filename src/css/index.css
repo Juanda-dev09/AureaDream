@@ -5,6 +5,10 @@
 @import url(/src/css/routines.css);
 @import url(/src/css/footer.css);
 @import url(catalogo.css);
+@import url(product-detail.css);
+@import url(login.css);
+@import url(nosotros.css);
+@import url(perfil.css);
 
 :root {
   /* ===== Colores ===== */
@@ -143,6 +147,18 @@ html {
 body {
   height: 100%;
   background-color: var(--color-bg);
+}
+
+.bx-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contentHeader-sectionHero-aureaDream.header-innerPage {
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow-lg);
 }
 
 .activeBgHeaderPage {
