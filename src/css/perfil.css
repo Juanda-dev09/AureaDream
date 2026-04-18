@@ -1,0 +1,240 @@
+/* Mi cuenta / perfil — variables y ritmo del proyecto */
+
+.page-perfil-aureaDream {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+
+  .perfil-main {
+    max-width: var(--breakpoint-xl);
+    margin: 0 auto;
+    padding: calc(70px + var(--space-10)) var(--space-16) var(--space-16);
+  }
+
+  .perfil-pageTitle {
+    font-family: var(--ftGoldman);
+    font-size: var(--font-size-4xl);
+    color: var(--ColorBlack);
+    margin-bottom: var(--space-2);
+  }
+
+  .perfil-pageLead {
+    font-size: var(--font-size-lg);
+    color: var(--ColorGray);
+    margin-bottom: var(--space-10);
+    max-width: 50ch;
+    line-height: var(--line-height-relaxed);
+  }
+
+  .perfil-heroCard {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-6);
+    padding: var(--space-8);
+    margin-bottom: var(--space-10);
+    border-radius: var(--radius-xl);
+    background: linear-gradient(
+      135deg,
+      var(--ColorSoftBrowm),
+      var(--ColorSoftGrayLigther)
+    );
+    box-shadow: var(--shadow-md);
+  }
+
+  .perfil-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: var(--radius-full);
+    background-color: var(--ColorBrowm);
+    color: var(--color-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ftGoldman);
+    font-size: var(--font-size-2xl);
+    flex-shrink: 0;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .perfil-heroText {
+    flex: 1;
+    min-width: 200px;
+
+    h2 {
+      font-size: var(--font-size-2xl);
+      font-weight: var(--font-weight-semibold);
+      color: var(--ColorBlack);
+      margin-bottom: var(--space-1);
+    }
+
+    .perfil-email {
+      font-size: var(--font-size-base);
+      color: var(--ColorGray);
+    }
+  }
+
+  .perfil-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+    margin-bottom: var(--space-10);
+  }
+
+  .perfil-card {
+    background-color: var(--ColorWhite);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--ColorSoftGray);
+
+    &.perfil-card--wide {
+      grid-column: 1 / -1;
+    }
+
+    h3 {
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-semibold);
+      color: var(--ColorBlack);
+      margin-bottom: var(--space-5);
+      padding-bottom: var(--space-3);
+      border-bottom: 1px solid var(--ColorSoftGray);
+    }
+  }
+
+  .perfil-field {
+    margin-bottom: var(--space-5);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    label {
+      display: block;
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-medium);
+      color: var(--ColorSoftBlack);
+      margin-bottom: var(--space-2);
+    }
+
+    input {
+      width: 100%;
+      height: 44px;
+      padding: 0 var(--space-4);
+      border: 2px solid var(--ColorSoftGray);
+      border-radius: var(--radius-md);
+      font-family: var(--ftKanit);
+      font-size: var(--font-size-base);
+      color: var(--ColorBlack);
+      background-color: var(--ColorSoftGrayLigther);
+
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .perfil-hint {
+    font-size: var(--font-size-xs);
+    color: var(--ColorGray);
+    margin-top: var(--space-4);
+    line-height: var(--line-height-relaxed);
+  }
+
+  .perfil-empty {
+    text-align: center;
+    padding: var(--space-8) var(--space-4);
+    color: var(--ColorGray);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+
+    a {
+      color: var(--ColorBrowmBlack);
+      font-weight: var(--font-weight-medium);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .perfil-prefRow {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    font-size: var(--font-size-sm);
+    color: var(--ColorGray);
+    line-height: var(--line-height-relaxed);
+
+    input {
+      width: 18px;
+      height: 18px;
+      margin-top: 0.15rem;
+      accent-color: var(--ColorBrowmBlack);
+      flex-shrink: 0;
+    }
+  }
+
+  .perfil-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    align-items: center;
+  }
+
+  .perfil-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 var(--space-8);
+    border-radius: var(--radius-full);
+    font-family: var(--ftKanit);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: var(--transition-base);
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+
+  .perfil-btn--primary {
+    background-color: var(--ColorBrowm);
+    color: var(--color-bg);
+    box-shadow: var(--shadow-sm);
+
+    &:hover {
+      background-color: var(--ColorBrowmBlack);
+    }
+  }
+
+  .perfil-btn--ghost {
+    background: transparent;
+    color: var(--ColorBlack);
+    border-color: var(--ColorSoftGray);
+
+    &:hover {
+      border-color: var(--ColorBrowmBlack);
+      color: var(--ColorBrowmBlack);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .page-perfil-aureaDream {
+    .perfil-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .perfil-main {
+      padding: calc(70px + var(--space-6)) var(--space-6) var(--space-10);
+    }
+
+    .perfil-pageTitle {
+      font-size: var(--font-size-3xl);
+    }
+  }
+}

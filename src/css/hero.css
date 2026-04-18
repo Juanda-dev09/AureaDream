@@ -88,6 +88,22 @@
           color: var(--ColorBrowmBlack);
         }
       }
+
+      .header-icon-link {
+        display: flex;
+        align-items: center;
+        color: var(--ColorBlack);
+        text-decoration: none;
+        transition: var(--transition-base);
+
+        .bxf {
+          font-size: var(--font-size-lg);
+        }
+
+        &:hover {
+          color: var(--ColorBrowmBlack);
+        }
+      }
     }
 
     .bx-x {

@@ -1,21 +1,107 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catalogo de productos AureaDream</title>
+    <title>Catálogo de productos | Aurea Dream</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.css"
+    />
     <link rel="stylesheet" href="../css/index.css" />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="content__allCatalogo-aureaDream">
+      <header
+        class="contentHeader-sectionHero-aureaDream header-innerPage"
+      >
+        <section class="bx-logo-and-navbar">
+          <a
+            href="../../index.html"
+            class="bx-logoPage bx-logo-link"
+            aria-label="Aurea Dream — Inicio"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 92.03 91.59"
+              fill="var(--ColorBrowm)"
+              width="50"
+              height="50"
+            >
+              <path
+                d="M49.03,48.36c-.94.94-2.36,2.18-3.18,2.27s-2.04-1.23-2.83-2.01c-12.74-12.7-16.07-8.97-12.77-19.19,3.49-10.79,7.45-21.04,16.1-29.43,8,9.01,12.1,19.12,15.73,29.78,3.21,9.43-.78,6.27-13.05,18.58Z"
+              />
+              <g>
+                <path
+                  d="M35.39,55.3c9.19,11.68,8.91,21.41,10.33,36.29-13.25-1.66-25.94-6.53-33.96-16.56-4.99-6.24-9.07-13.16-10.15-20.94l-1.61-11.6c8.04-3.06,29.08,4.78,35.39,12.8Z"
+                />
+                <path
+                  d="M56.41,89.48c-.98-9.15-2.01-17.38-4.63-26.64,6.5-10.23,16.89-19.49,29.48-20.78l10.75-1.11c.59,22.19-13.07,42.28-35.6,48.53Z"
+                />
+              </g>
+            </svg>
+          </a>
+
+          <nav class="navbarPage-aureaDream">
+            <a href="../../index.html" class="itemsNavbar">Inicio</a>
+            <a href="./catalogo.html" class="itemsNavbar activeNavbar"
+              >Catalogo</a
+            >
+            <a href="./nosotros.html" class="itemsNavbar">Nosotros</a>
+            <a href="#" class="itemsNavbar">Ciencia</a>
+          </nav>
+        </section>
+
+        <section class="bx-search-btnsPage-aureaDream">
+          <div class="bx-iconSearch-aureaDream">
+            <input type="text" id="search" placeholder="Buscar" />
+            <div class="bx-iconSearch"><i class="bxs bx-search"></i></div>
+          </div>
+
+          <div class="bx-iconsHeader">
+            <i class="bxf bx-heart"></i>
+            <i class="bxf bx-shopping-bag"></i>
+            <a
+              href="./perfil.html"
+              class="header-icon-link"
+              aria-label="Mi cuenta"
+            >
+              <i class="bxf bx-user"></i>
+            </a>
+          </div>
+
+          <nav class="navbarPage-aureaDream navbarPage-aureaDreamMobile">
+            <a href="../../index.html" class="itemsNavbar">Inicio</a>
+            <a href="./catalogo.html" class="itemsNavbar activeNavbar"
+              >Catalogo</a
+            >
+            <a href="./nosotros.html" class="itemsNavbar">Nosotros</a>
+            <a href="#" class="itemsNavbar">Ciencia</a>
+          </nav>
+
+          <i class="bxf bx-x"></i>
+        </section>
+
+        <div class="bx-iconMenuHamburguese">
+          <i class="bxf bx-menu"></i>
+        </div>
+      </header>
+
       <header class="content-headerCatalgoo-aureaDream">
         <section class="introductionCatalogo-aureaDream">
-          <span class="pageLocation">Inicio > Catalogo</span>
-          <h2 class="titleSecond txtGradient2">Catalogo de productos</h2>
-          <p class="txt">
-            Efficacious formulas crafted with dermatologist-grade botanical
-            extracts for radiant, long-term skin health.
-          </p>
+          <h2 class="titleSecond txtGradient2">Catálogo de productos</h2>
         </section>
 
         <div class="bx-content-filterTypeProducts">
@@ -79,25 +165,23 @@
 
           <section class="contaion-btn-options">
             <div class="bx-btnOptions">
-              <button class="applyFilters">Aplicar Filtros</button>
+              <button class="applyFilters btnFilters">Aplicar Filtros</button>
             </div>
 
-            <div class="bx-btnOptions">
-              <button class="clarAll">Limpiar todo</button>
+            <div class="bx-btnOptions clearAll">
+              <button class="clarAll btnFilters">Limpiar todo</button>
             </div>
           </section>
         </aside>
 
         <section class="content__allProductsCatalogo">
-          <article class="content-cardProduct-catalogo">
+          <a href="./producto-detalle.html" class="content-cardProduct-catalogo">
             <div class="bx-imageProduct-catalogo">
               <img
-                src=""
+                src="../../public/images/antiedadFeatured.webp"
                 alt="Imagen de producto del catalogo"
                 class="imageProduct-catalogo"
               />
-
-              <span class="tooltipBest">Best seller</span>
             </div>
 
             <section class="contain-infoProduct-catalogo">
@@ -108,9 +192,71 @@
 
               <span class="priceProduct-catalogo">$84.00</span>
             </section>
-          </article>
+          </a>
+
+          <a href="./producto-detalle.html" class="content-cardProduct-catalogo">
+            <div class="bx-imageProduct-catalogo">
+              <img
+                src="../../public/images/antiedadFeatured.webp"
+                alt="Imagen de producto del catalogo"
+                class="imageProduct-catalogo"
+              />
+            </div>
+
+            <section class="contain-infoProduct-catalogo">
+              <div class="infoProduct-catalogo">
+                <h3 class="titleProduct-catalogo">Luminous C Serum</h3>
+                <p class="txt txtClamp">Advanced brightening concentrate</p>
+              </div>
+
+              <span class="priceProduct-catalogo">$84.00</span>
+            </section>
+          </a>
+
+          <a href="./producto-detalle.html" class="content-cardProduct-catalogo">
+            <div class="bx-imageProduct-catalogo">
+              <img
+                src="../../public/images/antiedadFeatured.webp"
+                alt="Imagen de producto del catalogo"
+                class="imageProduct-catalogo"
+              />
+            </div>
+
+            <section class="contain-infoProduct-catalogo">
+              <div class="infoProduct-catalogo">
+                <h3 class="titleProduct-catalogo">Luminous C Serum</h3>
+                <p class="txt txtClamp">Advanced brightening concentrate</p>
+              </div>
+
+              <span class="priceProduct-catalogo">$84.00</span>
+            </section>
+          </a>
+
+          <a href="./producto-detalle.html" class="content-cardProduct-catalogo">
+            <div class="bx-imageProduct-catalogo">
+              <img
+                src="../../public/images/antiedadFeatured.webp"
+                alt="Imagen de producto del catalogo"
+                class="imageProduct-catalogo"
+              />
+            </div>
+
+            <section class="contain-infoProduct-catalogo">
+              <div class="infoProduct-catalogo">
+                <h3 class="titleProduct-catalogo">Luminous C Serum</h3>
+                <p class="txt txtClamp">Advanced brightening concentrate</p>
+              </div>
+
+              <span class="priceProduct-catalogo">$84.00</span>
+            </section>
+          </a>
         </section>
       </article>
+
+      <footer class="content_allFooterSection-aureaDream"></footer>
     </main>
+
+    <script type="module" src="../../src/js/main.js"></script>
+    <script src="../../src/js/authSession.js" defer></script>
   </body>
 </html>

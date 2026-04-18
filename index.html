@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta c harset="UTF-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aurea Dream | Glow Natural para tu Piel</title>
     <link
@@ -27,7 +27,7 @@
       <!-- HEADER SECTION -->
       <header class="contentHeader-sectionHero-aureaDream">
         <section class="bx-logo-and-navbar">
-          <div class="bx-logoPage">
+          <a href="./index.html" class="bx-logoPage bx-logo-link" aria-label="Aurea Dream — Inicio">
             <svg
               id="Capa_1"
               data-name="Capa 1"
@@ -47,12 +47,12 @@
                 />
               </g>
             </svg>
-          </div>
+          </a>
 
           <nav class="navbarPage-aureaDream">
             <a href="./index.html" class="itemsNavbar activeNavbar">Inicio</a>
             <a href="src/pages/catalogo.html" class="itemsNavbar">Catalogo</a>
-            <a href="#" class="itemsNavbar">Nosotros</a>
+            <a href="src/pages/nosotros.html" class="itemsNavbar">Nosotros</a>
             <a href="#" class="itemsNavbar">Ciencia</a>
           </nav>
         </section>
@@ -66,13 +66,19 @@
           <div class="bx-iconsHeader">
             <i class="bxf bx-heart"></i>
             <i class="bxf bx-shopping-bag"></i>
-            <i class="bxf bx-user"></i>
+            <a
+              href="src/pages/perfil.html"
+              class="header-icon-link"
+              aria-label="Mi cuenta"
+            >
+              <i class="bxf bx-user"></i>
+            </a>
           </div>
 
           <nav class="navbarPage-aureaDream navbarPage-aureaDreamMobile">
-            <a href="#" class="itemsNavbar activeNavbar">Inicio</a>
-            <a href="#" class="itemsNavbar">Catalogo</a>
-            <a href="#" class="itemsNavbar">Nosotros</a>
+            <a href="./index.html" class="itemsNavbar activeNavbar">Inicio</a>
+            <a href="src/pages/catalogo.html" class="itemsNavbar">Catalogo</a>
+            <a href="src/pages/nosotros.html" class="itemsNavbar">Nosotros</a>
             <a href="#" class="itemsNavbar">Ciencia</a>
           </nav>
 
@@ -134,7 +140,7 @@
             </p>
           </div>
 
-          <a href="#" class="showMore">Ver todo</a>
+          <a href="src/pages/catalogo.html" class="showMore">Ver todo</a>
         </section>
 
         <!-- PRODUCTOS MOSTRADOS DESDE productFeatured.js -->
@@ -294,5 +300,6 @@
       <footer class="content_allFooterSection-aureaDream"></footer>
     </main>
     <script type="module" src="/src/js/main.js"></script>
+    <script src="src/js/authSession.js" defer></script>
   </body>
 </html>
