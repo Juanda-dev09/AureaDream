@@ -1,6 +1,3 @@
-/**
- * Galería miniaturas, tallas y acordeones — página detalle producto
- */
 const mainImg = document.querySelector(".productDetail-mainImage");
 const thumbs = document.querySelectorAll(".productDetail-thumb[data-full-src]");
 const sizeBtns = document.querySelectorAll(".productDetail-sizeBtn");
